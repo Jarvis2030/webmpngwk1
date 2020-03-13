@@ -1,0 +1,159 @@
+*
+{
+	padding: 0;
+	margin : 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: rgb(238, 255, 249);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+}
+.menu-bar
+{
+	background:rgb(71, 75, 71);
+	text-align: center;
+}
+
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: #fff; /*white*/
+}
+.menu-bar ul li
+
+{
+	width: 120px;
+	margin:15px;
+	padding: 15px;
+}
+
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+	background-color: #2bab0d;
+	border-radius: 3px;
+}
+.menu-bar .fa
+{
+	margin-right: 8px; 
+}
+
+.sub-menu-1
+{
+	display:none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background: rgb(0, 99, 0);
+	margin-top: 15px;
+	margin-left: -15px; 
+}
+/*To align vertically*/
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+/*To remove the line from the last menu*/
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+
+{
+	border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+	color:#b2ff00;
+
+}
+.fa-angle-right
+{
+	float: right;
+}
+
+
+.footer
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer a{
+    height: 100px;
+    width: 100px;
+    background-color: #f5f6fa;
+    border-radius: 60px;
+    text-align: center;
+    margin: 10px;
+    line-height: 110px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+
+}
+a i
+ {
+    transition: all 0.3s linear;
+
+}
+a:hover i
+{
+    transform: scale(1.4);
+}
+
+.fa-github{
+    color: #e84393;
+}
+.fa-LinkedIn{
+    color: #e84118;
+}
+.fa-twitter{
+    color: #0097e6;
+}
+.copyright {
+    font-size: 0.80rem;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+table
+{
+    width: 100%;
+    font-size:11pt;   
+}
+.table, th, td
+{
+    border: 1px solid #cecece;
+    border-collapse: collapse;
+    text-align: center;
+	table-layout: fixed;
+	height: 40px;
+}
+
+.button{
+	position: absolute;
+	padding-right: 50%;
+	margin-right: 68px;
+}
+
