@@ -111,10 +111,3 @@ table
 	table-layout: fixed;
 	height: 40px;
 }
-
-.button{
-	position: absolute;
-	padding-right: 50%;
-	margin-right: 68px;
-}
-
